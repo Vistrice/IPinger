@@ -1,0 +1,30 @@
+#!/bin/bash
+# comments
+while true
+do
+echo "======="
+echo "IPinger"
+echo "======="
+echo ""
+echo "Type Start To Begin"
+echo -e "\n"
+echo -e "Type Start: \c"
+read answer
+case "$answer" in
+
+start)
+clear
+echo "========"
+echo "Enter IP"
+echo "========"
+echo ""
+echo -e "Enter IP \c"
+read answer
+clear
+ping "$answer"
+;;
+
+esac
+echo -e "Press Enter To Return To Menu \c"
+read input
+done
